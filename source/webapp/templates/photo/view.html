@@ -3,8 +3,12 @@
 {% block title %}{{ photo.sign }}{% endblock %}
 
 {% block menu %}
-     <li><a href="{% url 'webapp:photo_delete' photo.pk%}"> Delete photo </a></li>
+    {% if perms.webapp.change_photo or request.user == photo.author%}
+     <li><a href="{% url 'webapp:photo_delete' photo.pk%}"> Delete photo </a>
+    {% endif %}
+    {% if perms.webapp.change_photo or request.user == photo.author%}
      <li><a href="{% url 'webapp:photo_update' photo.pk %}"> Update photo </a></li>
+    {% endif %}
 {% endblock %}
 {% block content %}
     <p class="text-center">
