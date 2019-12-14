@@ -20,5 +20,5 @@ class Comment(models.Model):
     photo = models.ForeignKey('Image', on_delete=models.CASCADE, related_name="comments")
 
 class Like(models.Model):
-    photo = models.ForeignKey(Image, on_delete=models.PROTECT, null=True, blank=True, verbose_name='photo', related_name='photolikes')
-    user = models.ForeignKey(User, on_delete=models.PROTECT, null=True, blank=True, verbose_name='photo', related_name='userlikes')
+    photo = models.ForeignKey(Image, on_delete=models.CASCADE, null=True, blank=True, verbose_name='photo', related_name='photolikes')
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True, verbose_name='author', related_name='userlikes')

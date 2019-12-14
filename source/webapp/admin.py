@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 from django.contrib import admin
-from webapp.models import Image, Comment
+from webapp.models import Image, Comment, Like
 
 
 class ImageAdmin(admin.ModelAdmin):
@@ -13,4 +13,5 @@ class ImageAdmin(admin.ModelAdmin):
 
 admin.site.register(Image, ImageAdmin)
 admin.site.register(Comment)
+admin.site.register(Like)
 
