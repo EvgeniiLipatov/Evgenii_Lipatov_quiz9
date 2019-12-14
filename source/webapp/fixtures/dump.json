@@ -1,0 +1,164 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$kakGfTpglQDX$cEJJBj32Wn5NQssRDSvEXtG3H5vcsNB0o13/78Xm/KU=",
+    "last_login": "2019-12-14T13:58:56.540Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-12-14T05:07:57.204Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "webapp.like",
+  "pk": 2,
+  "fields": {
+    "photo": 4,
+    "user": 1
+  }
+},
+{
+  "model": "webapp.like",
+  "pk": 3,
+  "fields": {
+    "photo": 4,
+    "user": 1
+  }
+},
+{
+  "model": "webapp.like",
+  "pk": 4,
+  "fields": {
+    "photo": 4,
+    "user": 1
+  }
+},
+{
+  "model": "webapp.like",
+  "pk": 5,
+  "fields": {
+    "photo": 4,
+    "user": 1
+  }
+},
+{
+  "model": "webapp.like",
+  "pk": 6,
+  "fields": {
+    "photo": 1,
+    "user": 1
+  }
+},
+{
+  "model": "webapp.like",
+  "pk": 7,
+  "fields": {
+    "photo": 2,
+    "user": 1
+  }
+},
+{
+  "model": "webapp.comment",
+  "pk": 1,
+  "fields": {
+    "text": "Just a comment",
+    "created_at": "2019-12-14T09:18:18.506Z",
+    "author": 1,
+    "photo": 1
+  }
+},
+{
+  "model": "webapp.comment",
+  "pk": 2,
+  "fields": {
+    "text": "Just one more comment",
+    "created_at": "2019-12-14T09:18:34.596Z",
+    "author": 1,
+    "photo": 4
+  }
+},
+{
+  "model": "webapp.comment",
+  "pk": 3,
+  "fields": {
+    "text": "New comment",
+    "created_at": "2019-12-14T12:20:27.107Z",
+    "author": 1,
+    "photo": 5
+  }
+},
+{
+  "model": "webapp.image",
+  "pk": 1,
+  "fields": {
+    "photo": "gallery_images/cat.jpeg",
+    "sign": "My favorite cat",
+    "likenum": 1,
+    "author": 1,
+    "created_at": "2019-12-14T08:21:11.965Z"
+  }
+},
+{
+  "model": "webapp.image",
+  "pk": 2,
+  "fields": {
+    "photo": "gallery_images/manti.jpeg",
+    "sign": "taste mants",
+    "likenum": 1,
+    "author": 1,
+    "created_at": "2019-12-14T08:42:21.169Z"
+  }
+},
+{
+  "model": "webapp.image",
+  "pk": 3,
+  "fields": {
+    "photo": "gallery_images/cat_6YY9QK7.jpeg",
+    "sign": "Another cat",
+    "likenum": 0,
+    "author": 1,
+    "created_at": "2019-12-14T08:43:43.756Z"
+  }
+},
+{
+  "model": "webapp.image",
+  "pk": 4,
+  "fields": {
+    "photo": "gallery_images/cat_r6uGlyG.jpeg",
+    "sign": "Another cat",
+    "likenum": 3,
+    "author": 1,
+    "created_at": "2019-12-14T08:43:53.573Z"
+  }
+},
+{
+  "model": "webapp.image",
+  "pk": 5,
+  "fields": {
+    "photo": "gallery_images/cat_GBQagQc.jpeg",
+    "sign": "Another cat",
+    "likenum": 0,
+    "author": 1,
+    "created_at": "2019-12-14T08:47:06.320Z"
+  }
+},
+{
+  "model": "webapp.image",
+  "pk": 6,
+  "fields": {
+    "photo": "gallery_images/manti_Z82OVtE.jpeg",
+    "sign": "another taste mant",
+    "likenum": 0,
+    "author": 1,
+    "created_at": "2019-12-14T08:58:40.531Z"
+  }
+}
+]
